@@ -6,7 +6,7 @@ Desenvolva um game com JavaScript! (5 aulas com Guilherme Lima e Juliana Negreir
 
 ### Aulas
 <details>
-  <summary>Aula 1: Motor do Jogo</summary>
+  <summary>Aula 1: Animações básicas e trilha sonora</summary>
     
   - História;
   - Personagem; 
@@ -16,24 +16,21 @@ Desenvolva um game com JavaScript! (5 aulas com Guilherme Lima e Juliana Negreir
 </details>
 
 <details>
-  <summary>Aula 2: Inimigos e colisão</summary>
-  
+  <summary>Aula 2: Fluxo de vida, missão e falha</summary>
   
   - Mais sprites;
   - Algoritmos de colisão.
 </details>
 
 <details>
-  <summary>Aula 3: Mapas, textos e powerup</summary>
-  
-  
+  <summary>Aula 3: Mais inimigos e pontuação</summary>
+    
   - Deixando o jogo mais profissional.
 </details>
 
 <details>
   <summary>Aula 4: Gerenciamento de estado</summary>
-  
-  
+    
   - Telas;
   - Estados;
   - História do jogo.
@@ -41,8 +38,7 @@ Desenvolva um game com JavaScript! (5 aulas com Guilherme Lima e Juliana Negreir
 
 <details>
   <summary>Aula 5: Adicionando complexidade</summary>
-  
-  
+    
   - Movimentação diferente dos inimigos;
   - Powerups.
 </details>
