@@ -5,6 +5,7 @@ let imagemInimigoTroll;
 let imagemInimigoVoador;
 let imagemGameOver;
 let imagemTelaInicial;
+let imagemVida;
 let fonteTelaInicial;
 let jogo;
 
@@ -21,6 +22,8 @@ let inimigoTroll;
 let inimigoVoador;
 let somDoPulo;
 let pontuacao;
+let vida;
+let config;
 
 const matrizInimigo = [
   [0, 0],
