@@ -40,19 +40,40 @@ class Personagem extends Animacao {
     estaColidindo(inimigo) {
         if(this.invencivel) {
             return false;
-        }
+        } 
         
         const precisao = .7;
+        
+        if(isDebug) {
+            noFill();
+            stroke("red");
+            strokeWeight(5)
+            rect(
+                this.x + 20,
+                this.y + 40,
+                this.largura * precisao,
+                this.altura * precisao
+            );
+
+            rect(
+                inimigo.x + inimigo.precisaoColisao[0],
+                inimigo.y + inimigo.precisaoColisao[1],
+                inimigo.largura * inimigo.precisaoColisao[2],
+                inimigo.altura * inimigo.precisaoColisao[2]
+            );
+        }    
+
         const colisao = collideRectRect(
-            this.x,
-            this.y,
+            this.x + 20,
+            this.y + 40,
             this.largura * precisao,
             this.altura * precisao,
-            inimigo.x,
-            inimigo.y,
-            inimigo.largura * precisao,
-            inimigo.altura * precisao
+            inimigo.x + inimigo.precisaoColisao[0],
+            inimigo.y + inimigo.precisaoColisao[1],
+            inimigo.largura * inimigo.precisaoColisao[2],
+            inimigo.altura * inimigo.precisaoColisao[2]
         );
+
 
         return colisao;
     }
