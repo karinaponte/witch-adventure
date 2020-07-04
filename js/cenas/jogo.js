@@ -5,9 +5,12 @@ class Jogo {
     }
 
     setup() {
-        cenario = new Cenario(imagemCenario, 3);
+        for(let i = 0; i < imagemCenario.length; i++) {
+            cenario.push(new Cenario(imagemCenario[i], i * 3));
+        }
+        
         pontuacao = new Pontuacao();
-        vida = new Vida(config.configuracoes.vidaMaxima, config.configuracoes.vidaInicial);
+        vida = new Vida(config.configuracoes.vidaMaxima, config.configuracoes.vidaInicial);   
 
         personagem = new Personagem(matrizPersonagem, imagemPersonagem, 0, 30, 110, 135, 220, 270);
         const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width -52, 30, 52, 52, 104, 104, 8);
@@ -27,8 +30,10 @@ class Jogo {
     }
 
     draw() {
-        cenario.exibe();
-        cenario.move();
+        for(let i = 0; i < imagemCenario.length; i++) {
+            cenario[i].exibe();
+            cenario[i].move();
+        }
 
         vida.draw();
         pontuacao.exibe();

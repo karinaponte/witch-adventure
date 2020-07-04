@@ -1,5 +1,4 @@
-function preload() {
-    imagemCenario = loadImage("./img/cenario/floresta.png");
+function preload() { 
     imagemGameOver = loadImage("./img/assets/game-over.png");
     imagemPersonagem = loadImage("./img/personagem/correndo.png");
     imagemInimigo = loadImage("./img/inimigos/gotinha.png");
@@ -11,4 +10,9 @@ function preload() {
     config = loadJSON("./config/config.json");
     somDoJogo = loadSound("./sounds/trilha_jogo.mp3");
     somDoPulo = loadSound("./sounds/somPulo.mp3");
+
+    for(let i = 1; i <= 5; i++) {
+        imagemCenario.push(loadImage(`./img/cenario/floresta${i}.png`));
+    }
 }
+

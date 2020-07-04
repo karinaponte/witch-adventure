@@ -7,7 +7,7 @@
     "mapa": [
         {
             "inimigo": 0,
-            "velocidade": 10
+            "velocidade": 16
         },
         {
             "inimigo": 1,
